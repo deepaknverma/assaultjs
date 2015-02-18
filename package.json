@@ -47,6 +47,7 @@
     "require-directory": "^2.0.0",
     "shelljs": "^0.3.0",
     "shodan-client": "^1.0.7",
+    "subquest": "1.2.0",
     "tcp-ping": "^0.1.1",
     "traceroute": "0.0.3",
     "websocket": "^1.0.17"
