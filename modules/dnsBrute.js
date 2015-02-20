@@ -26,24 +26,24 @@ var subquest = require('subquest'),
         description : 'DNS brute force',
         options     : {
             host : {
+                type         : 'domain',
                 description  : 'Domain to explore',
-                defaultValue : 'google.com',
-                type         : 'allValid'
+                defaultValue : 'google.com'
             },
             dnsServer : {
+                type         : 'ip',
                 description  : 'Specify your custom DNS resolver',
-                defaultValue : '87.216.170.85',
-                type         : 'allValid'
+                defaultValue : '87.216.170.85'
             },
             rateLimit : {
+                type         : 'positiveInt',
                 description  : "Set the Rate Limit [Default value is 10]",
-                defaultValue : 10,
-                type         : 'positiveInt'
+                defaultValue : 10
             },
             dictionary : {
+                type         : 'allValid',
                 description  : 'Set the dictionary for bruteforcing [top_50, ...]',
-                defaultValue : 'top_100',
-                type         : 'allValid'
+                defaultValue : 'top_100'
             }
         }
     };
