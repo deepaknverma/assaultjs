@@ -31,6 +31,12 @@ function isPositiveInt(value) {
     return (value === '0' || (value || 0) > 0 && value % 1 === 0);
 }
 
+function isDomain(value) {
+    var reDomain = /^([a-zA-Z0-9\-]+\.){1,5}[a-zA-Z0-9]+$/;
+
+    return value.toString().match(reDomain) != null;
+}
+
 function isPort(value) {
     return (isPositiveInt(value) && (0 <= parseInt(value)) && (parseInt(value) <= 65535));
 }
@@ -95,6 +101,14 @@ module.exports.positiveInt = function (value) {
         return parseInt(value);
     } else {
         throw new Error('Any positive integer');
+    }
+};
+
+module.exports.domain = function (value) {
+    if (isDomain(value)) {
+        return value;
+    } else {
+        throw new Error('ie: google.com, www.google.com');
     }
 };
 
