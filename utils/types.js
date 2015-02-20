@@ -34,7 +34,7 @@ function isPositiveInt(value) {
 function isDomain(value) {
     var reDomain = /^([a-zA-Z0-9\-]+\.){1,5}[a-zA-Z0-9]+$/;
 
-    return value.toString().match(reDomain) != null;
+    return reDomain.test(value.toString());
 }
 
 function isPort(value) {
