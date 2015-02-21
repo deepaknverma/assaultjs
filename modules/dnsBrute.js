@@ -37,7 +37,7 @@ var subquest = require('subquest'),
             },
             rateLimit : {
                 type         : 'positiveInt',
-                description  : "Set the Rate Limit [Default value is 10]",
+                description  : 'Set the Rate Limit [Default value is 10]',
                 defaultValue : 10
             },
             dictionary : {
@@ -53,7 +53,9 @@ var subquest = require('subquest'),
 module.exports.help = HELP;
 
 module.exports.run = function (options, callback) {
+
     subquest.getSubDomains(options).on('end', function (arr) {
-    callback(null, arr); // array of subdomains.
-});
+        callback(null, arr);
+    });
+    
 };

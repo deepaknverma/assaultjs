@@ -32,7 +32,7 @@ function isPositiveInt(value) {
 }
 
 function isDomain(value) {
-    var reDomain = /^([a-zA-Z0-9\-]+\.){1,5}[a-zA-Z0-9]+$/;
+    var reDomain = /^([a-zA-Z0-9\-]{0,63}\.)+[a-zA-Z0-9]{2,}$/;
 
     return reDomain.test(value.toString());
 }
