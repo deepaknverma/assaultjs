@@ -37,7 +37,8 @@ assault.runModule('geoLocate', moduleOptions, function (err, result) {
 - Please use GitHub web (https://github.com/assaultjs/assaultjs/issues). If you have doubts playing with the software label the issue as "question".
 
 ## Developer guide
-- To contribute we use [GitHub pull requests](https://help.github.com/articles/using-pull-requests).
+- Start coding with one of the actual modules similar to the new one as a boilerplate.
+- Use [GitHub pull requests](https://help.github.com/articles/using-pull-requests).
 - Conventions:
  - We use [JSHint](http://jshint.com/) and [Crockford's Styleguide](http://javascript.crockford.com/code.html).
  - Please run `grunt contribute` to be sure your code fits with them.

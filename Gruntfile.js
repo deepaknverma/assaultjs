@@ -22,6 +22,8 @@ module.exports = function (grunt) {
 
     // Load all Grunt tasks at once
     require('load-grunt-tasks')(grunt);
+    // Display the elapsed execution time
+    require('time-grunt')(grunt);
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),

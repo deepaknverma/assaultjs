@@ -24,6 +24,9 @@ var requireDir = require('require-directory'),
 
     assaultUtils = require('./utils/common');
 
+// TODO: Only in dev env
+// Displays the execution time for Node.js modules
+require("time-require");
 
 // Constructor
 

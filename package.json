@@ -14,7 +14,7 @@
     "url": "https://github.com/assaultjs/assaultjs/assaultjs.git"
   },
   "keywords": [
-    "Node.js",
+    "Node",
     "security",
     "tool",
     "Pentesting",
@@ -58,7 +58,9 @@
     "grunt-retire": "^0.3.7",
     "jscs-stylish": "^0.3.1",
     "jshint-stylish": "^1.0.0",
-    "load-grunt-tasks": "^3.1.0"
+    "load-grunt-tasks": "^3.1.0",
+    "time-grunt": "^1.0.0",
+    "time-require": "^0.1.2"
   },
   "engines": {
     "node": "0.12.x"
